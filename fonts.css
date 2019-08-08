@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Refrigerator Deluxe";
+    src: url("./fonts/Refrigerator Deluxe/Refrigerator Deluxe Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "futura-pt";
+    src: url("./fonts/Futura/Coco-Gothic-Regular-trial.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "futura";
+    src: url("./fonts/Futura/GlacialIndifference-Bold.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
