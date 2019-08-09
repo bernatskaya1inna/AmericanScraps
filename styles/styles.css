@@ -4,7 +4,7 @@ ul {
 }
 
 body {
-    background-image: url("images/spittle-texture.jpg");
+    background-image: url("../images/spittle-texture.jpg");
     background-repeat: repeat;
     background-position: left top;
     background-size: 549px 547px;
@@ -24,7 +24,7 @@ header {
 
 header:after {
     height: 60px;
-    background: url("./images/masthead-downward-wedge-home.png") no-repeat center top;
+    background: url("../images/masthead-downward-wedge-home.png") no-repeat center top;
     background-size: 381px 60px;
     content: "";
     width: 100%;
@@ -35,7 +35,7 @@ header:after {
     transition: all 200ms;
 }
 
-.inner {
+.header-inner {
     min-height: 246px;
     position: relative;
     z-index: 3;
@@ -148,7 +148,7 @@ ul.header-menu li a:hover {
 }
 
 .environment {
-    background-image: url("images/home-hero.jpg");
+    background-image: url("../images/home-hero.jpg");
     width: 100%;
     height: 554px;
     background-size: cover;
@@ -159,7 +159,7 @@ ul.header-menu li a:hover {
     z-index: 0;
 }
 
-.environment .inner {
+.environment-inner {
     min-height: 554px;
     width: 100%;
     position: relative;
@@ -263,7 +263,7 @@ ul.header-menu li a:hover {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    background-image: url("images/spittle-texture.jpg");
+    background-image: url("../images/spittle-texture.jpg");
     background-repeat: repeat;
     background-position: left top;
     background-size: 549px 547px;
@@ -276,7 +276,7 @@ ul.header-menu li a:hover {
 
 .mission-statement__circle:after {
     content: "";
-    background-image: url("images/dotted-rule-white-vert.png");
+    background-image: url("../images/dotted-rule-white-vert.png");
     display: block;
     position: absolute;
     background-size: 2px 13px;
@@ -317,7 +317,7 @@ ul.header-menu li a:hover {
     color: black;
 }
 
-.star {
+.mission-statement__star {
     margin-top: 20px;
 }
 
@@ -328,7 +328,7 @@ ul.header-menu li a:hover {
     margin-top: 25px;
 }
 
-.author span:nth-of-type(1) {
+.mission-statement__author span:nth-of-type(1) {
     font-size: 13px;
     letter-spacing: 1.3px;
     text-transform: uppercase;
@@ -336,16 +336,16 @@ ul.header-menu li a:hover {
     font-family: "futura";
 }
 
-.author span:nth-of-type(2) {
+.mission-statement__author span:nth-of-type(2) {
     font-size: 8px;
     letter-spacing: 1.3px;
     text-transform: uppercase;
     font-weight: 700;
-    font-family: "futura", Futura, Arial, sans-serif;
+    font-family: "futura";
 }
 
 .median-sampler {
-    background: url("./images/fauxcol-50-50-lightgray.png") repeat-y center top;
+    background: url("../images/fauxcol-50-50-lightgray.png") repeat-y center top;
     position: relative;
     z-index: 2;
     margin-bottom: 95px;
@@ -353,7 +353,7 @@ ul.header-menu li a:hover {
 }
 
 .median-sampler > .bound {
-    background: url("./images/spittle-texture.jpg") repeat left top;
+    background: url("../images/spittle-texture.jpg") repeat left top;
     background-size: 549px 547px;
     background-color: white;
     display: flex;
