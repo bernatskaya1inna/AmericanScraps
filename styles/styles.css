@@ -1,0 +1,361 @@
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../images/spittle-texture.jpg");
+    background-repeat: repeat;
+    background-position: left top;
+    background-size: 549px 547px;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 0;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+}
+
+header:after {
+    height: 60px;
+    background: url("../images/masthead-downward-wedge-home.png") no-repeat center top;
+    background-size: 381px 60px;
+    content: "";
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+    display: block;
+    transition: all 200ms;
+}
+
+.header-inner {
+    min-height: 246px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bound {
+    width: 88%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+ul.header-menu {
+    position: absolute;
+    top: 178px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-transform: uppercase;
+    display: flex;
+}
+
+ul.header-menu li {
+    padding: 0 5px;
+    text-decoration: none;
+    color: #0eadaf;
+    font-family: Refrigerator Deluxe;
+    letter-spacing: 0.95px;
+    font-size: 22px;
+    line-height: 1.3;
+    margin-right: 25px;
+}
+
+ul.header-menu li a {
+    text-decoration: none;
+    color: #0eadaf;
+    border: 2px solid transparent;
+    padding: 2px;
+}
+
+ul.header-menu li:last-of-type {
+    margin-right: 0;
+}
+
+ul.header-menu li a:hover {
+    border: 2px solid #0eadaf;
+    padding: 2px;
+}
+
+.header-brand {
+    position: absolute;
+    top: 54px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 250ms;
+}
+
+.header-brand a {
+    display: block;
+    width: 222px;
+    height: 191px;
+}
+
+.header-brand .header-brand__eagle {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.header-brand .header-brand__eagle img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    top: 0;
+    z-index: 3;
+    transform: scale(1.10) translateZ(0);
+}
+
+.header-brand a:hover img {
+    transform: scale(1.29) translateZ(0);
+}
+
+.header-social-links {
+    display: flex;
+    position: absolute;
+    right: -14px;
+    top: 166px;
+}
+
+.header-social-links>.header-social-links__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    margin-right: 5px;
+}
+
+.header-social-links__icon:last-of-type {
+    margin-right: 0;
+}
+
+.header-social-links__icon a:hover
+    img{
+        transform: scale(1.25) translateZ(0);
+}
+
+.environment {
+    background-image: url("../images/home-hero.jpg");
+    width: 100%;
+    height: 554px;
+    background-size: cover;
+    position: relative;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 0;
+}
+
+.environment-inner {
+    min-height: 554px;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.featured-entry {
+    padding: 75px 0;
+    display: flex;
+    align-items: center;
+}
+
+.featured-entry a {
+    display: block;
+    max-width: 600px;
+    padding: 5px 0;
+    text-decoration: none;
+}
+
+.excerption-item__title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+    font-family: "futura";
+    font-weight: 700;
+    margin-bottom: 25px;
+    font-size: 19px;
+    transition: all 250ms;
+    box-shadow: inset 0 -1px 0 transparent;
+    padding: 8px 36px 0 36px;
+    left: -36px;
+    letter-spacing: 0.07em;
+}
+
+.excerption-item__subtitle {
+    display: block;
+    font-family: "futura";
+    font-weight: 700;
+    font-size: 52px;
+    letter-spacing: -0.32px;
+    line-height: 1.05;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 22px;
+}
+
+.excerption-item__subtitle span {
+    color: white;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    box-shadow: 0 5px 0 0 transparent, 0 -5px 0 0 transparent, 20px 0 0 8px black, -20px 0 0 8px black, inset 0 -80px 0 black, 0 20px 40px transparent;
+    transition: all 250ms;
+    position: relative;
+    top: 0;
+}
+
+.excerption-item__prompt {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "futura";
+    font-size: 15px;
+    padding: 12px 36px 11px 28px;
+    margin-left: -28px;
+    letter-spacing: 0.8px;
+    transition: all 250ms;
+    box-shadow: inset 0 45px 0 black;
+    background: rgba(0, 0, 0, 0.35);
+    position: relative;
+    z-index: 3;
+    text-shadow: none;
+}
+
+.excerption-item__prompt span {
+    color: #29dcde;
+    font-weight: 700;
+}
+
+.excerption-item__prompt:after {
+    transform: rotate(30deg);
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    left: 4px;
+    transition: all 250ms;
+    border: 4px solid transparent;
+    border-top: 6px solid #29dcde;
+}
+
+.mission-statement {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+}
+
+.mission-statement__circle {
+    width: 270px;
+    height: 270px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-image: url("../images/spittle-texture.jpg");
+    background-repeat: repeat;
+    background-position: left top;
+    background-size: 549px 547px;
+    position: relative;
+    top: 69px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.mission-statement__circle:after {
+    content: "";
+    background-image: url("../images/dotted-rule-white-vert.png");
+    display: block;
+    position: absolute;
+    background-size: 2px 13px;
+    width: 2px;
+    height: 800px;
+    top: 270px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mission-statement__quote:before {
+    content: "";
+    position: absolute;
+    width: 256px;
+    height: 256px;
+    border: 1px solid #2fd4d4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.mission-statement__quote {
+    text-align: center;
+    max-width: 200px;
+    line-height: 1.5;
+    font-family: "futura-pt", Futura, Arial, sans-serif;
+    font-size: 13.5px;
+    font-weight: 400;
+    margin-top: 60px;
+}
+
+.mission-statement__quote span {
+    font-weight: 700;
+    box-shadow: none;
+    color: black;
+}
+
+.mission-statement__star {
+    margin-top: 20px;
+}
+
+.mission-statement__author {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.mission-statement__author span:nth-of-type(1) {
+    font-size: 13px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "futura";
+}
+
+.mission-statement__author span:nth-of-type(2) {
+    font-size: 8px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "futura";
+}
+
+.median-sampler {
+    background: url("../images/fauxcol-50-50-lightgray.png") repeat-y center top;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 95px;
+    background-size: 3000px 10px;
+}
+
+.median-sampler > .bound {
+    background: url("../images/spittle-texture.jpg") repeat left top;
+    background-size: 549px 547px;
+    background-color: white;
+    display: flex;
+}
+
