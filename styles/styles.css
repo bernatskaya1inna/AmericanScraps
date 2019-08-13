@@ -129,7 +129,7 @@ ul.header-menu li a:hover {
     top: 166px;
 }
 
-.header-social-links>.header-social-links__icon {
+.header-social-links > .header-social-links__icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,8 +143,8 @@ ul.header-menu li a:hover {
 }
 
 .header-social-links__icon a:hover
-    img{
-        transform: scale(1.25) translateZ(0);
+img {
+    transform: scale(1.25) translateZ(0);
 }
 
 .environment {
@@ -358,4 +358,404 @@ ul.header-menu li a:hover {
     background-color: white;
     display: flex;
 }
+
+.median-sampler {
+    background: url("../images/fauxcol-50-50-lightgray.png") repeat-y center top;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 95px;
+    background-size: 3000px 10px;
+}
+
+.median-sampler > .bound {
+    background: url("../images/spittle-texture.jpg") repeat left top;
+    background-size: 549px 547px;
+    background-color: white;
+    display: flex;
+}
+
+.pushcart-clerk {
+    position: relative;
+    z-index: 4;
+    left: 0;
+    mix-blend-mode: multiply;
+}
+
+.pushcart-clerk b {
+    background-image: url("../images/pushcart-clerk.jpg");
+    background-size: 196px 174px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: -28px;
+    width: 196px;
+    height: 174px;
+}
+
+.median-sampler__content {
+    width: 65.538461538462%;
+    display: flex;
+    flex-direction: column;
+}
+
+.median-sampler__title {
+    width: 100%;
+    background: url("../images/dotted-rule-orange.png") repeat-x left 101px;
+    background-size: 13px 2px;
+    min-height: 144px;
+    margin-bottom: 76px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.median-sampler__title h1 {
+    font-family: "Refrigerator-Deluxe";
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0;
+    position: absolute;
+    top: 69px;
+    letter-spacing: 0.1em;
+}
+
+.median-sampler__title p {
+    font-family: "futura";
+    position: absolute;
+    top: 112px;
+    text-transform: lowercase;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+ul.median-sampler__articles {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.median-sampler__articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.median-sampler-articles-item {
+    width: 370px;
+    height: auto;
+}
+
+.median-sampler-articles-item:nth-of-type(n+3) {
+    margin-top: 45px;
+}
+
+.median-sampler-articles-item:nth-of-type(2n) {
+    margin-right: 0;
+}
+
+.median-sampler-articles-item__image {
+    background-size: 370px 120px;
+    width: 370px;
+    height: 120px;
+}
+
+.median-sampler-articles-item time {
+    display: block;
+    background: rgba(0, 255, 255, 0.4);
+    position: relative;
+    height: 22px;
+    overflow: hidden;
+    width: 80px;
+    top: -14px;
+    left: 0;
+    background: url("../images/spittle-texture.jpg") repeat left top;
+    background-size: 549px 547px;
+    background-color: white;
+    font-weight: 700;
+    font-size: 0.625rem;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+    color: #f08012;
+    box-sizing: border-box;
+    padding: 4px 0 0 0;
+    border-radius: 0 10px 0 0;
+    z-index: 2;
+    box-shadow: none;
+    transition: all 200ms;
+    text-decoration: none;
+}
+
+.median-sampler-articles-item time b {
+    color: #943101;
+    transition: all 200ms;
+    left: 7px;
+    top: 4px;
+    font-size: 0.625rem;
+}
+
+.median-sampler-articles-item time span {
+    color: inherit;
+    transition: all 200ms;
+    left: 39px;
+    top: 4px;
+}
+
+.median-sampler-articles-item__title {
+    display: block;
+    font-weight: 700;
+    font-size: 1.4375rem;
+    line-height: 1.1;
+    position: relative;
+    top: -10px;
+    font-family: futura;
+    color: black;
+}
+
+.median-sampler-articles-item__title span {
+    border-bottom: 1px solid #f7bf88;
+}
+
+.median-sampler-articles-item__title span:hover {
+    border-bottom: 3px solid #f7bf88;
+}
+
+.median-sampler__browseScraps {
+    display: flex;
+    background-image: url("../images/str.svg");
+    width: 187px;
+    height: 41px;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-bottom: 95px;
+}
+
+.median-sampler__browseScraps:hover
+span {
+    color: #f28102;
+}
+
+.median-sampler__browseScraps a {
+    text-decoration: none;
+}
+
+.median-sampler__browseScraps span {
+    color: black;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "futura";
+    margin-left: 8px;
+}
+
+.median-sampler__featured-video {
+    background: url("../images/test-pattern.png") no-repeat right top, url("../images/dotted-rule-orange.png") repeat-x left 80px;
+    background-size: auto 75%, 13px 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.median-sampler-featured-video__poster {
+    background: url("../images/dotted-rule-orange.png") repeat-x left 80px;
+    background-size: 13px 2px;
+    position: relative;
+}
+
+.median-sampler-featured-video__poster img {
+    max-width: 402px;
+}
+
+.median-sampler-featured-video__poster:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 68%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.55);
+    z-index: 4;
+    background: url("../images/play-triangle.png") no-repeat center center;
+    background-size: 100% 100%;
+    transition: all 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    cursor: pointer;
+}
+
+.median-sampler-featured-video__poster:hover:after {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+
+}
+
+.median-sampler-featured-video__prose {
+    text-transform: uppercase;
+    font: 400 normal 1rem/1 "Refrigerator-Deluxe", Arial, sans-serif;
+    letter-spacing: 0.15em;
+    padding-top: 53px;
+    padding-left: 24px;
+}
+
+.median-sampler-featured-video__prose h1 {
+    text-transform: none;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    margin-bottom: 12px;
+    transition: all 300ms;
+    box-shadow: inset 1px 0 0 transparent, -1px 0 0 transparent;
+    padding: 7px 8px 7px 0;
+    font-family: Futura;
+    letter-spacing: 0.01em;
+}
+
+.median-sampler-featured-video__prose p {
+    line-height: 1.6;
+    text-transform: none;
+    font-family: Futura-pt;
+    letter-spacing: 0;
+    font-size: 12px;
+}
+
+.sidebar {
+    background: url("../images/median-sidebar-gears.png") no-repeat right top, url("../images/fauxcol-75-25-lightgray.png") repeat-y 100% top;
+    background-size: 336px 1130px, 1300px 10px;
+    width: 26.0504201681%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sidebar__content {
+    width: 87.0967741935%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar__founder {
+    margin-bottom: 14px;
+}
+
+.sidebar__founder img {
+    max-width: 205px;
+    margin: -26px auto 0px;
+}
+
+.sidebar__lettering {
+    margin-bottom: 20px;
+}
+
+.sidebar__lettering img {
+    max-width: 214px;
+}
+
+.sidebar__essay {
+    font-family: futura-pt;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.8;
+    opacity: 0.9;
+    letter-spacing: 0.01em;
+    padding-top: 7px;
+    max-width: 220px;
+}
+
+.sidebar__essay em {
+    font-style: italic;
+}
+
+.sidebar__essay span:after {
+    transform: rotate(30deg);
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    left: 4px;
+    transition: all 250ms;
+    border: 4px solid transparent;
+    border-top: 6px solid #29dcde;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar span {
+    font-family: Futura;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    padding: 0 14px 0 3px;
+    position: relative;
+    background: transparent;
+    box-shadow: inset 1px 0 0 transparent;
+    transition: all 200ms;
+    color: #0eadaf;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar__factory {
+    padding-top: 65px;
+}
+
+.sidebar__factory img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.sidebar__videos {
+    margin-top: 180px;
+}
+
+.sidebar-videos__title {
+    text-transform: uppercase;
+    font: 400 normal 1rem/1 "Refrigerator-Deluxe", Arial, sans-serif;
+    letter-spacing: 0.15em;
+    margin-bottom: 33px;
+}
+
+.sidebar-videos__content {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 6px;
+}
+
+.sidebar-videos-item__poster img {
+    width: 85px;
+}
+
+.sidebar-videos-item__title {
+    font-weight: 700;
+    font-family: futura-pt;
+    padding: 5px 10px 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-videos-item__title span {
+    transition: all 215ms;
+    box-shadow: inset 0 -1px 0 transparent;
+    color: black;
+    text-transform: none;
+    font-size: 0.9375rem;
+    padding: 0;
+}
+
 
