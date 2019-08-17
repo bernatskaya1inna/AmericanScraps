@@ -32,3 +32,10 @@
     font-style: normal;
     font-weight: normal;
 }
+
+@font-face {
+    font-family: "futura-book";
+    src: url("../fonts/Futura/Futura Book font.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
