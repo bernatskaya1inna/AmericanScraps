@@ -2,6 +2,13 @@ ul {
     padding: 0;
     margin: 0;
 }
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
 
 body {
     background-image: url("../images/spittle-texture.jpg");
@@ -128,10 +135,9 @@ ul.header-menu li a:hover {
     top: 166px;
 }
 
-.header-social-links:hover {
+.header-social-links:hover{
     opacity: 0.5;
 }
-
 .header-social-links > .header-social-links__icon {
     display: flex;
     align-items: center;
@@ -147,6 +153,7 @@ ul.header-menu li a:hover {
 
 .header-social-links__icon a:hover {
     transform: scale(1.25) translateZ(0);
+    opacity: 1;
 }
 
 .environment {
@@ -190,6 +197,21 @@ ul.header-menu li a:hover {
     color: black;
     top: -11px;
     box-shadow: 0 5px 0 0 #fff, 0 -5px 0 0 #fff, 24px 0 0 12px #fff, -24px 0 0 12px #fff, inset 0 -80px 0 #fff, 0 20px 40px rgba(0, 0, 0, 0.55);
+}
+.featured-entry a:hover .excerption-item__prompt{
+    box-shadow: inset 0 1px 0 transparent;
+}
+
+.featured-entry a:hover .excerption-item__prompt span{
+    color: white;
+}
+.featured-entry a:hover .excerption-item__prompt:after{
+    border-top:6px solid white;
+}
+
+.excerption-item__subtitle span b{
+    position: relative;
+    background: transparent;
 }
 
 .excerption-item__title {
@@ -362,7 +384,6 @@ ul.header-menu li a:hover {
     position: relative;
     z-index: 2;
     margin-bottom: 95px;
-    background-size: 3000px 10px;
 }
 
 .median-sampler > .bound {
@@ -372,20 +393,6 @@ ul.header-menu li a:hover {
     display: flex;
 }
 
-.median-sampler {
-    background: url("../images/fauxcol-50-50-lightgray.png") repeat-y center top;
-    position: relative;
-    z-index: 2;
-    margin-bottom: 95px;
-    background-size: 3000px 10px;
-}
-
-.median-sampler > .bound {
-    background: url("../images/spittle-texture.jpg") repeat left top;
-    background-size: 549px 547px;
-    background-color: white;
-    display: flex;
-}
 
 .pushcart-clerk {
     position: relative;
@@ -396,7 +403,7 @@ ul.header-menu li a:hover {
 
 .pushcart-clerk b {
     background-image: url("../images/pushcart-clerk.jpg");
-    background-size: 196px 174px;
+    background-size: cover;
     mix-blend-mode: multiply;
     position: absolute;
     top: -28px;
@@ -446,13 +453,7 @@ ul.median-sampler__articles {
     margin-bottom: 40px;
 }
 
-ul li {
-    list-style-type: none;
-}
 
-ul li a {
-    text-decoration: none;
-}
 
 .median-sampler__articles {
     display: flex;
@@ -478,7 +479,7 @@ ul li a {
 }
 
 .median-sampler-articles-item__image {
-    background-size: 370px 120px;
+   background-size: cover;
     width: 370px;
     height: 120px;
 }
@@ -576,7 +577,6 @@ ul li a {
     height: 41px;
     justify-content: center;
     align-items: center;
-    float: right;
     margin-bottom: 95px;
 }
 
@@ -680,7 +680,7 @@ ul li a {
     font-size: 15px;
 }
 
-.sidebar {
+.rightSidebar {
     background: url("../images/median-sidebar-gears.png") no-repeat right top, url("../images/fauxcol-75-25-lightgray.png") repeat-y 100% top;
     background-size: 336px 1130px, 1300px 10px;
     width: 26.0504201681%;
@@ -689,31 +689,33 @@ ul li a {
     padding-bottom: 110px;
 }
 
-.sidebar__content {
+.rightSidebar__content {
     width: 87.0967741935%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sidebar__founder {
+.rightSidebar__founder {
     margin-bottom: 14px;
+    max-width: 205px;
 }
 
-.sidebar__founder img {
-    max-width: 205px;
+.rightSidebar__founder img {
+    width: 100%;
     margin: -26px auto 0px;
 }
 
-.sidebar__lettering {
+.rightSidebar__lettering {
     margin-bottom: 20px;
-}
-
-.sidebar__lettering img {
     max-width: 214px;
 }
 
-.sidebar__essay {
+.rightSidebar__lettering img {
+    width: 100%;
+}
+
+.rightSidebar__essay {
     font-family: futura-pt;
     font-size: 12px;
     text-align: center;
@@ -724,11 +726,11 @@ ul li a {
     max-width: 220px;
 }
 
-.sidebar__essay em {
+.rightSidebar__essay em {
     font-style: italic;
 }
 
-.sidebar__essay span:after {
+.rightSidebar__essay span:after {
     transform: rotate(30deg);
     content: "";
     display: inline-block;
@@ -745,7 +747,7 @@ p {
     margin: 0;
 }
 
-.sidebar span {
+.rightSidebar span {
     font-family: Futura;
     font-weight: 700;
     text-transform: uppercase;
@@ -759,54 +761,58 @@ p {
     color: #0eadaf;
 }
 
-.sidebar a {
+.rightSidebar a {
     text-decoration: none;
 }
 
-.sidebar a:hover span {
+.rightSidebar a:hover span {
     color: white;
 }
+.rightSidebar a:hover span{
+    box-shadow: inset 43px 0 0 #0eadaf;
+}
 
-.sidebar__factory {
+
+.rightSidebar__factory {
     padding-top: 65px;
 }
 
-.sidebar__factory img {
+.rightSidebar__factory img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.sidebar__videos {
+.rightSidebar__videos {
     margin-top: 180px;
 }
 
-.sidebar-videos__title {
+.rightSidebar-videos__title {
     text-transform: uppercase;
     font: 400 normal 1rem/1 "Refrigerator-Deluxe", Arial, sans-serif;
     letter-spacing: 0.15em;
     margin-bottom: 33px;
 }
 
-.sidebar-videos__content {
+.rightSidebar-videos__content {
     display: flex;
     align-items: stretch;
     margin-bottom: 6px;
 }
 
-.sidebar-videos__content:hover {
+.rightSidebar-videos__content:hover {
     box-shadow: rgb(240, 128, 18) 300px 0px 0px inset, rgb(240, 128, 18) -8px 0px 0px;
 }
 
-.sidebar-videos-item__poster {
+.rigtSidebar-videos-item__poster {
     padding: 4px 0;
 }
 
-.sidebar-videos-item__poster img {
+.rightSidebar-videos-item__poster img {
     width: 82px;
 }
 
-.sidebar-videos-item__title {
+.rightSidebar-videos-item__title {
     font-weight: 700;
     font-family: futura-pt;
     padding: 5px 10px 5px 20px;
@@ -814,7 +820,7 @@ p {
     align-items: center;
 }
 
-.sidebar-videos-item__title span {
+.rightSidebar-videos-item__title span {
     transition: all 215ms;
     box-shadow: inset 0 -1px 0 transparent;
     color: black;
@@ -1212,14 +1218,14 @@ p {
     font-family: Futura;
 }
 
-form {
+.newsletter-signup form {
     width: 47.4576271186%;
     position: absolute;
     display: flex;
     justify-content: space-between;
 }
 
-input[type="email"] {
+.newsletter-signup__content input[type="email"] {
     height: 48px;
     width: 68.9285714286%;
     background-color: #b46a23;
@@ -1232,16 +1238,16 @@ input[type="email"] {
     box-sizing: border-box;
 }
 
-input[type="email"]::placeholder {
+.newsletter-signup__content input[type="email"]::placeholder {
     color: #ffca97;
 }
 
-input[type="email"]:focus {
+.newsletter-signup__content input[type="email"]:focus {
     background-color: white;
     color: black;
 }
 
-input[type="submit"] {
+.newsletter-signup__content input[type="submit"] {
     width: 28.2142857143%;
     height: 48px;
     background-color: white;
@@ -1255,7 +1261,7 @@ input[type="submit"] {
     letter-spacing: 0.05rem;
 }
 
-input[type="submit"]:hover {
+.newsletter-signup__content input[type="submit"]:hover {
     background-color: #0eadaf;
     color: white;
     box-shadow: 0 0 0 6px white;
@@ -1298,7 +1304,7 @@ input[type="submit"]:hover {
     box-shadow: inset 0 -3px 0 #f08012, inset 0 -3px 0 transparent;
 }
 
-.appendices-sources__prose .sc {
+.appendices-sources-prose__abbreviation {
     font-size: 75%;
 }
 
@@ -1433,7 +1439,7 @@ footer h1 {
     font-weight: 700;
 }
 
-footer h1 a:hover {
+.footer-inner h1 a:hover {
     box-shadow: 0 2px 0 #0eadaf;;
 }
 
